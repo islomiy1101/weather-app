@@ -45,7 +45,7 @@ function requestApi(city){
 }
 
 function fetchData(){
-    infoTxt.innerText='Ob-xavo ma\'lumotlari olinmoqda';
+    infoTxt.innerText='Ob-xavo ma\'lumotlari olinmoqda...';
     infoTxt.classList.add('pending');
     fetch(api).then(response=>response.json()).then(data=>weatherDetails(data))
 
